@@ -24,10 +24,37 @@ export default function Window() {
   const [input, setInput] = React.useState("");
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  let isKPressed = false;
+  let isCtrlPressed = false;
 
   window.addEventListener("keydown", (el) => {
     if (el.keyCode === 27) {
       handleClose();
+    }
+  });
+
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Control") {
+      isKPressed = true;
+    }
+
+    if (event.keyCode === 75) {
+      isCtrlPressed = true;
+    }
+
+    if (isKPressed && isCtrlPressed) {
+      handleOpen()
+    }
+  });
+
+  document.addEventListener("keyup", (event) => {
+    if (event.key === "Shift") {
+      isKPressed = false;
+    }
+
+    if (event.key === "Control") {
+      isCtrlPressed = false;
     }
   });
 
@@ -64,7 +91,7 @@ export default function Window() {
             {data
               .filter((state) => state.name.toLowerCase().includes(input))
               .map((state) => (
-                <Link  to={`/info/${state.name}`} id="con-text" key={state.key}>
+                <Link to={`/info/${state.name}`} id="con-text" key={state.key}>
                   {state.name}
                 </Link>
               ))}
