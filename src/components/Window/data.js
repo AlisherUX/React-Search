@@ -1,74 +1,74 @@
 export const data = [
     {
         id: 1,
-        name: "Uzbekistan"
+        name: "uzbekistan"
     },
     {
         id: 2,
-        name: "Russia"
+        name: "russia"
     },
     {
         id: 3,
-        name: "USA"
+        name: "usa"
     },
     {
         id: 4,
-        name: "China"
+        name: "china"
     },
     {
         id: 5,
-        name: "France"
+        name: "france"
     },
     {
         id: 6,
-        name: "Germany"
+        name: "germany"
     },
     {
         id: 7,
-        name: "Australia"
+        name: "australia"
     },
     {
         id: 8,
-        name: "Mexico"
+        name: "mexico"
     },
     {
         id: 9,
-        name: "Brazil"
+        name: "brazil"
     },
     {
         id: 10,
-        name: "Albania"
+        name: "albania"
     },
     {
         id: 11,
-        name: "Argentina"
+        name: "argentina"
     },
     {
         id: 12,
-        name: "Afghanistan"
+        name: "afghanistan"
     },
     {
         id: 13,
-        name: "	Algeria"
+        name: "algeria"
     },
     {
         id: 14,
-        name: "	Andorra"
+        name: "andorra"
     },
     {
         id: 15,
-        name: "Chile"
+        name: "chile"
     },
     {
         id: 16,
-        name: "Colombia"
+        name: "colombia"
     },
     {
         id: 17,
-        name: "Cuba"
+        name: "cuba"
     },
     {
         id: 18,
-        name: "Egypt"
+        name: "egypt"
     },
 ]
