@@ -1,11 +1,13 @@
 import React from 'react';
-import Window from '../../components/Window';
+import Search from '../../components/Search';
+// import Dropdown from '../../components/Dropdown';
 
 const Home = () => {
 
   return (
     <React.Fragment>
-        <Window />
+        <Search />
+        {/* <Dropdown /> */}
     </React.Fragment>
   )
 }
